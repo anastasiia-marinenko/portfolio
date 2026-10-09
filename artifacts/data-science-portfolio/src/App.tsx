@@ -1,69 +1,95 @@
-import { ArrowDown, ArrowRight, ArrowUpRight, Github, Linkedin } from 'lucide-react';
+import { ArrowDown, ArrowRight, ArrowUpRight, Github, Linkedin, Mail } from 'lucide-react';
 import portrait from '@assets/IMG_20261009_170418_1791554735472.jpg';
 
 const profileLinks = {
   github: 'https://github.com/anastasiia-marinenko',
   linkedin: 'https://linkedin.com/in/anastasiia-marinenko',
+  email: 'nastyamarinenko735@gmail.com',
 };
 
 const projects = [
   {
-    number: '01 / AIR QUALITY',
+    category: 'AIR QUALITY',
     title: 'AirWatch Pro',
-    description: 'Air-quality monitoring that brings global sensor networks together with machine-learning predictions.',
+    description: 'Team CloudMap built an air-quality platform combining global sensor data with machine-learning forecasts. Live backend support is temporarily paused.',
     tags: ['Sensor networks', 'Machine learning', 'Prediction'],
+    links: [
+      { label: 'NASA Space Apps project', url: 'https://www.spaceappschallenge.org/2025/find-a-team/cloudmap/?tab=project' },
+    ],
   },
   {
-    number: '02 / PRODUCT DESIGN',
+    category: 'UI / UX & ARCHITECTURE',
     title: 'AdmissionIQ',
-    description: 'Analytics web-app concept for exploring admission data, with interface and architecture design.',
-    tags: ['Data analytics', 'Web app', 'Architecture'],
+    description: 'UI/UX and architecture design for a web application focused on admission data analytics.',
+    tags: ['Data analytics', 'UI / UX design', 'Architecture'],
+    links: [
+      { label: 'Figma', url: 'https://www.figma.com/files/team/1264129389980080550/folder/100384033?fuid=1264129384626012284' },
+      { label: 'Project files', url: 'https://drive.google.com/drive/folders/1qKnRVXmvP8c_VC7dyZv3VN_uSsPCDElH?usp=sharing' },
+    ],
   },
   {
-    number: '03 / NLP',
+    category: 'NLP',
     title: 'Investence',
-    description: 'Investment sentiment analysis exploring the signal behind financial language.',
-    tags: ['Sentiment analysis', 'NLP'],
+    description: 'A web application for investment sentiment analysis, exploring signals in financial language.',
+    tags: ['Web application', 'Sentiment analysis', 'NLP'],
+    links: [
+      { label: 'GitHub', url: 'https://github.com/anastasiia-marinenko/investence' },
+      { label: 'Project files', url: 'https://drive.google.com/drive/folders/1HWhDPPgrhO9o69FeeajaO2nnFvjDzD4z?usp=sharing' },
+    ],
   },
   {
-    number: '04 / SYSTEM DESIGN',
+    category: 'INFORMATION SYSTEM',
     title: 'MyTravel',
     description: 'A travel-agency management system spanning web, mobile and desktop platforms.',
     tags: ['Web', 'Mobile', 'Desktop'],
+    links: [
+      { label: 'Project files', url: 'https://drive.google.com/drive/folders/1zo1OkTHu3wdqz-Lek9MhaHVvhkrXopJH?usp=sharing' },
+    ],
   },
   {
-    number: '05 / DATABASES',
-    title: 'Tourism agency database',
-    description: 'A relational model for tourism operations, normalized through BCNF.',
-    tags: ['Relational model', 'BCNF', 'SQL'],
+    category: 'HACKATHON · INT20H',
+    title: 'Quespiration',
+    description: 'A team hackathon project: an interactive platform for creating and completing quests.',
+    tags: ['Team project', 'Web', 'Hackathon'],
+    links: [
+      { label: 'GitHub', url: 'https://github.com/inspiraXion-team/INT20H-web-test-task' },
+    ],
   },
 ];
 
 const smallProjects = [
-  'Book Recommender',
-  'AI-Calendar',
-  'OASIS Garden Store',
-  'HAPPIFUL Magazine Blog',
-  'Cosmic Music Player',
-  "Earth's Rotation 3D Model",
+  { title: 'Book Recommender', url: 'https://github.com/anastasiia-marinenko/llm-semantic-book-recommender' },
+  { title: 'AI-Calendar', url: 'https://github.com/anastasiia-marinenko/AICalendar' },
+  { title: 'OASIS Garden Store', url: 'https://github.com/anastasiia-marinenko/oasis-garden-store' },
+  { title: 'HAPPIFUL Magazine Blog', url: 'https://github.com/anastasiia-marinenko/happiful-blog' },
+  { title: 'Cosmic Music Player', url: 'https://github.com/anastasiia-marinenko/cosmic-music-player' },
+  { title: "Earth's Rotation 3D Model", url: 'https://github.com/anastasiia-marinenko/earth-rotation' },
+  { title: 'Tourism agency database model (BCNF)' },
 ];
 
 const stackGroups = [
-  { label: 'Languages', items: ['Python', 'SQL', 'C / C++', 'Java', 'MATLAB', 'JavaScript', 'HTML / CSS', 'PHP'] },
+  { label: 'Programming', items: ['Python', 'SQL', 'C / C++', 'Java', 'MATLAB', 'HTML / CSS / JavaScript', 'PHP'] },
   { label: 'Data & ML', items: ['NumPy', 'Pandas', 'scikit-learn', 'Matplotlib', 'seaborn', 'TensorFlow', 'PyTorch'] },
-  { label: 'LLM & NLP', items: ['Hugging Face Transformers', 'LangChain', 'Ollama', 'Groq', 'OpenAI API', 'Anthropic API', 'Gemini API', 'Prompt engineering', 'RAG', 'Sentence embeddings', 'BERTScore', 'METEOR', 'ROUGE-L'] },
+  { label: 'LLM tooling', items: ['Transformers', 'LangChain', 'Ollama', 'Groq', 'OpenAI / Anthropic / Gemini API'] },
+  { label: 'Methods', items: ['Prompt engineering', 'RAG', 'Sentence embeddings', 'Statistical tests: McNemar, Wilcoxon, Friedman'] },
+  { label: 'Evaluation', items: ['BERTScore', 'METEOR', 'ROUGE-L', 'Accuracy / recall / specificity'] },
   { label: 'Databases', items: ['PostgreSQL', 'MySQL', 'SQL Server', 'MongoDB'] },
   { label: 'Tools & cloud', items: ['Git / GitHub', 'Docker', 'Jupyter', 'Colab', 'Kaggle', 'Azure', 'Bash / Zsh'] },
+  { label: 'Soft skills', items: ['Teamwork in international teams', 'Independent work & accountability', 'Research & technical writing', 'Fast learning', 'Attention to detail', 'Time management'] },
+  { label: 'Language', items: ['English (B2)'] },
 ];
 
 function SocialLinks() {
   return (
-    <div className="nav-social" aria-label="Public profiles">
+    <div className="nav-social" aria-label="Contact and public profiles">
       <a className="icon-link" href={profileLinks.github} target="_blank" rel="noreferrer" aria-label="GitHub profile">
         <Github size={16} strokeWidth={1.8} />
       </a>
       <a className="icon-link" href={profileLinks.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
         <Linkedin size={15} strokeWidth={1.8} />
+      </a>
+      <a className="icon-link" href={`mailto:${profileLinks.email}`} aria-label="Email Anastasiia">
+        <Mail size={15} strokeWidth={1.8} />
       </a>
     </div>
   );
@@ -97,6 +123,7 @@ function App() {
           <div className="hero-cta fade-up delay-3">
             <a className="button-primary" href="#research">Explore selected work <ArrowDown size={15} /></a>
             <a className="button-secondary" href={profileLinks.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={14} /></a>
+            <a className="button-secondary" href={`mailto:${profileLinks.email}`}>Email <Mail size={14} /></a>
           </div>
           <div className="hero-note">Python · Machine learning · LLM evaluation</div>
         </div>
@@ -113,27 +140,21 @@ function App() {
       <section className="container section" id="research">
         <div className="section-head">
           <div><div className="section-index">01 — FEATURED RESEARCH</div><h2 className="section-title">A closer look at the work.</h2></div>
-          <p className="section-subtitle">A method-level study of documentation debt—built around a mined dataset, comparative evaluation and practical repair constraints.</p>
+          <p className="section-subtitle">A method-level study of documentation debt, comparing language-model approaches to identifying and repairing outdated code documentation.</p>
         </div>
         <article className="feature">
           <div className="feature-inner">
             <div className="feature-topline"><span>LLM research project</span><span>Dataset → evaluation → repair</span></div>
             <h3>Method-Level Documentation Debt Management</h3>
             <p className="feature-intro">An investigation into how large language models can identify and repair outdated method documentation while preserving information that is already correct.</p>
-            <div className="feature-metrics">
-              <div className="metric"><strong>496,688</strong><span>Java methods considered across 4,769 repositories</span></div>
-              <div className="metric"><strong>55,931</strong><span>documentation-fix pairs mined</span></div>
-              <div className="metric"><strong>360</strong><span>methods manually verified</span></div>
-              <div className="metric"><strong>6 LLMs</strong><span>compared across prompts and RAG</span></div>
-            </div>
             <div className="feature-details">
               <div className="detail-block">
-                <h4>Evaluation design</h4>
-                <p>Compared prompt patterns and retrieval-augmented generation. Evaluated with BERTScore, METEOR, ROUGE-L, sentence-embedding cosine distance, structural checks and statistical tests.</p>
+                <h4>Approach</h4>
+                <p>Compared prompt-engineering strategies and retrieval-augmented generation using repository context, with structural checks for method documentation.</p>
               </div>
               <div className="detail-block">
-                <h4>Findings</h4>
-                <p>Generated comments had correct tags in at least 95.6% of cases. Proprietary model detection accuracy ranged from 0.74–0.83. Field-level repairs reached 91.6–100%, preserving 93.5–98.5% of correct fields.</p>
+                <h4>Evaluation</h4>
+                <p>Combined text and semantic similarity measures, structure-aware checks and statistical tests to assess outdated-documentation detection and targeted repairs.</p>
               </div>
             </div>
           </div>
@@ -148,17 +169,31 @@ function App() {
         <div className="project-grid">
           {projects.map((project) => (
             <article className="project-card" key={project.title}>
-              <span className="card-number">{project.number}</span>
-              <span className="card-arrow" aria-hidden="true"><ArrowUpRight size={16} /></span>
+              <span className="card-number">{project.category}</span>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className="tag-row">{project.tags.map((tag) => <span className="tag" key={tag}>{tag}</span>)}</div>
+              <div className="project-links">
+                {project.links.map((link) => (
+                  <a className="project-link" key={link.url} href={link.url} target="_blank" rel="noreferrer">
+                    {link.label} <ArrowUpRight size={12} />
+                  </a>
+                ))}
+              </div>
             </article>
           ))}
         </div>
         <div className="small-projects">
           <div className="small-projects-label">Smaller builds &amp; experiments</div>
-          <div className="small-list">{smallProjects.map((project) => <span className="small-item" key={project}>{project}</span>)}</div>
+          <div className="small-list">
+            {smallProjects.map((project) => project.url ? (
+              <a className="small-item" key={project.title} href={project.url} target="_blank" rel="noreferrer">
+                {project.title} <ArrowUpRight size={11} />
+              </a>
+            ) : (
+              <span className="small-item" key={project.title}>{project.title}</span>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -190,16 +225,12 @@ function App() {
           <article className="credential-panel achievement-panel">
             <h3>Research &amp; recognition</h3>
             <div className="credential-row">
-              <div><strong>NASA International Space Apps Challenge 2025</strong><small>Team CloudMap · Global Nominee and Global Finalist</small></div>
+              <div><strong>NASA International Space Apps Challenge 2025</strong><small>Global Nominee and Global Finalist. Team CloudMap built AirWatch Pro, combining global air-quality sensor data with machine-learning forecasts.</small></div>
               <span className="credential-date">2025</span>
             </div>
             <div className="credential-row">
               <div><strong>Computer Technology for Secure Transmission of Text Messages Based on Image Distortion and Restoration</strong><small>Published conference paper</small></div>
               <span className="credential-date">2025</span>
-            </div>
-            <div className="credential-row">
-              <div><strong>Rewriting the Narrative: Leveraging Large Language Models for Method-Level Documentation Debt Management</strong><small>Publication in preparation</small></div>
-              <span className="credential-date">In prep.</span>
             </div>
           </article>
           <article className="credential-panel">
@@ -238,12 +269,14 @@ function App() {
             </div>
           </article>
         </div>
+        <p className="education-note"><strong>Education &amp; training:</strong> AIT Summer Schools and DES Winter Schools, Ivan Franko National University of Lviv · 2025–2026</p>
       </section>
 
       <footer className="footer">
         <div className="container footer-inner">
           <span className="footer-name">Anastasiia Marinenko <span className="brand-mark">·</span> Data science portfolio</span>
           <div className="footer-links">
+            <a href={`mailto:${profileLinks.email}`}>{profileLinks.email} <Mail size={11} /></a>
             <a href={profileLinks.github} target="_blank" rel="noreferrer">GitHub <ArrowRight size={11} /></a>
             <a href={profileLinks.linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowRight size={11} /></a>
             <a href="#home">Back to top <ArrowRight size={11} /></a>

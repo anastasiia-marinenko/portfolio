@@ -1,1 +1,1 @@
-- [Portfolio content boundaries](portfolio-content-boundaries.md) — Keep this portfolio focused on projects, technical skills, public profiles, achievements, and certificates.
+- [Portfolio content boundaries](portfolio-content-boundaries.md) — Include requested email, selected education/training, soft skills, English level, and technical portfolio; omit phone, address, and job history.
