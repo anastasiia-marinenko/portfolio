@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Data Science Portfolio"
+description = "A one-page technical portfolio for a trainee data scientist, presenting selected projects, technical skills, achievements, certificates, and public professional profiles without personal contact details or education and employment history."
+version = "1.0.0"
+id = "artifacts/data-science-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18522
+
+[services.development]
+run = "pnpm --filter @workspace/data-science-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/data-science-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/data-science-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18522"
+BASE_PATH = "/"

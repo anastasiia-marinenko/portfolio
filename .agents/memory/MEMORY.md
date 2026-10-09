@@ -1,0 +1,1 @@
+- [Portfolio content boundaries](portfolio-content-boundaries.md) — Keep this portfolio focused on projects, technical skills, public profiles, achievements, and certificates.
