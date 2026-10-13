@@ -236,6 +236,14 @@ function App() {
           <article className="credential-panel">
             <h3>Courses &amp; certificates</h3>
             <div className="credential-row">
+              <div><strong>Journey into Data Science with Python</strong><small>CodeSignal · path certificate</small></div>
+              <span className="credential-date">Oct 2026</span>
+            </div>
+            <div className="credential-row">
+              <div><strong>Deep Learning</strong><small>Anhalt University of Applied Sciences · academic course</small></div>
+              <span className="credential-date">Dec 2025</span>
+            </div>
+            <div className="credential-row">
               <div><strong>CS50’s Introduction to Artificial Intelligence with Python</strong><small>Harvard · course certificate</small></div>
               <span className="credential-date">Sep 2025</span>
             </div>
@@ -247,17 +255,12 @@ function App() {
               <div><strong>Introduction to SQL</strong><small>University of Michigan · course certificate</small></div>
               <span className="credential-date">May 2024</span>
             </div>
-            <div className="credential-row">
-              <div><strong>Deep Learning</strong><small>Anhalt University of Applied Sciences · academic course</small></div>
-              <span className="credential-date">Dec 2025</span>
-            </div>
           </article>
           <article className="credential-panel learning-panel">
             <h3>Currently learning</h3>
             <div className="learning-list">
               <span className="learning-chip">Machine Learning · Anhalt</span>
               <span className="learning-chip">Associate Data Scientist in Python · DataCamp</span>
-              <span className="learning-chip">Journey into Data Science with Python · CodeSignal</span>
             </div>
             <div className="small-projects-label" style={{ marginTop: 21 }}>CodeSignal learning paths</div>
             <div className="learning-list" style={{ marginTop: 11 }}>
